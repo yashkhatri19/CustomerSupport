@@ -164,6 +164,7 @@ function App() {
     }
   };
 
+  // --- AUTHENTICATION HANDLERS ---
   const handleAuthSubmit = (e) => {
     e.preventDefault();
     const normalizedEmail = emailInput.toLowerCase().trim();
