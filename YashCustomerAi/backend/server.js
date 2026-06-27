@@ -6,6 +6,7 @@ import OpenAI from "openai";
 
 dotenv.config();
 
+// Initialize Express app
 const app = express();
 app.use(cors({
     origin: ["http://localhost:5173", 
