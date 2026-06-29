@@ -220,7 +220,7 @@ function App() {
         }
       ]);
     }
-
+     // Set the active session for the user
     const userActiveSession = localStorage.getItem(`active_session_${normalizedEmail}`);
     setActiveSessionId(userActiveSession || 'session-1');
 
