@@ -151,7 +151,7 @@ function App() {
         }
         return chat;
       }));
-
+        // debugging: Log the bot's response
     } catch (error) {
       console.error(error);
       const errorMessage = { text: "Unable to sync with processing nodes right now.", sender: 'bot', time: 'OFFLINE' };
