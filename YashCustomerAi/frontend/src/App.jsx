@@ -193,6 +193,7 @@ function App() {
         alert("This email is already registered! Please log in instead.");
         return;
       }
+      // input validation for registration
       computedName = registerNameInput.toUpperCase();
       localUsersDb[normalizedEmail] = { name: computedName, password: passwordInput };
       localStorage.setItem("app_users_database", JSON.stringify(localUsersDb));
