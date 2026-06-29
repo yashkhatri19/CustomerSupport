@@ -207,7 +207,7 @@ function App() {
     localStorage.setItem("isLoggedIn", "true");
     localStorage.setItem("userName", computedName);
     localStorage.setItem("currentUserEmail", normalizedEmail);
-
+    // Load user-specific chats or initialize a new session
     const userSavedChats = localStorage.getItem(`chats_${normalizedEmail}`);
     if (userSavedChats && JSON.parse(userSavedChats).length > 0) {
       setConversations(JSON.parse(userSavedChats));
