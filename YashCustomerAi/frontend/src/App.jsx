@@ -199,7 +199,7 @@ function App() {
       localStorage.setItem("app_users_database", JSON.stringify(localUsersDb));
       alert("Account registered successfully! Logging you in...");
     }
-
+     // track the logged-in user
     setIsLoggedIn(true);
     setUserName(computedName);
     setCurrentUserEmail(normalizedEmail);
