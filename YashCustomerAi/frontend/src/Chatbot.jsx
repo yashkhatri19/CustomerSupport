@@ -112,8 +112,8 @@ export default function Chatbot() {
                   sendMessage();
                 }
               }}
-            />
-
+             />
+            // Button to send the message, disabled while loading
             <button
               onClick={sendMessage}
               disabled={loading}
