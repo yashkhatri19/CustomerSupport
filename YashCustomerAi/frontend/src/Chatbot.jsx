@@ -42,7 +42,7 @@ export default function Chatbot() {
       );
   
       const data = await response.json();
-
+       // Update the messages state with the bot's reply
       setMessages((prev) => [
         ...prev,
         {
